@@ -4,10 +4,12 @@ clear
 ENV_FILE="/var/app/.env"
 COPY_FILE="/var/tbf/.env"
 
-if [ -f "$ENV_FILE" ]; then
+  cd /var
+  mkdir tbf
+  cd
   cp "$ENV_FILE" "$COPY_FILE"
   chmod 644 /var/tbf/.env
-fi
+  
 udpport=7302
 echo -e "\nPlease input UDPGW Port ."
 printf "Default Port is \e[33m${udpport}\e[0m, let it blank to use this Port: "
