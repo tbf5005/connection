@@ -2,8 +2,8 @@
 clear
 
 mkdir -p /var/tbf/
+cp -r app/* /var/bot/
 
-cp https://github.com/tbf5005/connection/tree/main/app/*  /var/tbf/
 chmod 644 /var/tbf/.env
   
 udpport=7302
