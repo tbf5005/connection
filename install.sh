@@ -1,7 +1,9 @@
 #!/bin/bash
 clear
-
-cp -r app/* /var/bot/
+cd var
+mkdir tbf
+cd
+cp -r /app/* /var/tbf/
 
 udpport=7302
 echo -e "\nPlease input UDPGW Port ."
