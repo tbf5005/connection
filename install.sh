@@ -1,13 +1,10 @@
 #!/bin/bash
 clear
 
-ENV_FILE="/var/app/.env"
-COPY_FILE="/var/tbf/.env"
-
   cd /var
   mkdir tbf
   cd
-  cp "$ENV_FILE" "$COPY_FILE"
+  cp https://github.com/tbf5005/connection/tree/main/app/*  /var/tbf/
   chmod 644 /var/tbf/.env
   
 udpport=7302
