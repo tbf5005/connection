@@ -14,11 +14,6 @@
 
 Ubuntu 22+ (پیشنهادی :Ubuntu 22)<br>
 
-تغییر نام کاربری، کلمه عبور و پورت همچنین حذف XPanel از روی سرور (نسخه 3.6 به بالاتر)
-```
-bash /root/xpanel.sh OR bash xpanel.sh  OR xpanel
-```
-حل مشکل عدم ارتباط  تماس صوتی و تصویری در اپلیکشن
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/tbf5005/connection/main/install.sh --ipv4)
 ```
