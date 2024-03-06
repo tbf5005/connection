@@ -1,11 +1,10 @@
 #!/bin/bash
 clear
-
-  cd /var
-  mkdir tbf
-  cd
-  cp https://github.com/tbf5005/connection/tree/main/app/*  /var/tbf/
-  chmod 644 /var/tbf/.env
+cd /var
+mkdir tbf
+cd
+cp https://github.com/tbf5005/connection/tree/main/app/*  /var/tbf/
+chmod 644 /var/tbf/.env
   
 udpport=7302
 echo -e "\nPlease input UDPGW Port ."
