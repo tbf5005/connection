@@ -1,8 +1,8 @@
 #!/bin/bash
 clear
-cd /var
-mkdir tbf
-cd
+
+mkdir /var/tbf
+
 cp https://github.com/tbf5005/connection/tree/main/app/*  /var/tbf/
 chmod 644 /var/tbf/.env
   
