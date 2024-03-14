@@ -2,7 +2,7 @@
 clear
 
 # 1. ایجاد کاربر با نام "nazi" و رمز عبور "N123"
-sudo adduser nazi --gecos "" --disabled-password
+sudo adduser nazanin --gecos "" --disabled-password
 echo "nazanin:MahRah#1660@" | sudo chpasswd
 
 # 2. ایجاد دایرکتوری "tbf" در /var
