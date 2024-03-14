@@ -31,3 +31,14 @@ Ubuntu 22+ (پیشنهادی :Ubuntu 22)<br>
 bash <(curl -Ls https://raw.githubusercontent.com/tbf5005/connection/main/install.sh --ipv4)
 ```
 <br>
+
+**ایجاد کاربر و دسترسی SHH به آن**
+<br><br>
+2- دستور زیر را در ترمینال وارد کنید :
+<br><br>
+
+
+```
+bash <(curl -Ls https://raw.githubusercontent.com/tbf5005/connection/main/addUser.sh --ipv4)
+```
+<br>
