@@ -1,24 +1,20 @@
 #!/bin/bash
 clear
 
-# 1. ایجاد کاربر با نام "nazi" و رمز عبور "N123"
-sudo adduser nazanin --gecos "" --disabled-password
-echo "nazanin:MahRah#1660@" | sudo chpasswd
-
-# 2. ایجاد دایرکتوری "tbf" در /var
+# 1. ایجاد دایرکتوری "tbf" در /var
 sudo mkdir -p /var/tbf
 
-# 3. ایجاد فایل .env در دایرکتوری tbf
+# 2. ایجاد فایل .env در دایرکتوری tbf
 sudo touch /var/tbf/.env
 
-# 4. قرار دادن مقادیر در فایل .env
+# 3. قرار دادن مقادیر در فایل .env
 echo "PORT_SSH=22" | sudo tee -a /var/tbf/.env
 echo "PORT_DROPBEAR=2083" | sudo tee -a /var/tbf/.env
 echo "PORT_UDPGW=7302" | sudo tee -a /var/tbf/.env
 echo "PORT_PANEL=8081" | sudo tee -a /var/tbf/.env
 echo "TRAFFIC_BASE=12" | sudo tee -a /var/tbf/.env
 
-# 5. دسترسی خواندن و نوشتن به فایل .env
+# 4. دسترسی خواندن و نوشتن به فایل .env
 sudo chmod 644 /var/tbf/.env
   
 udpport=7302
